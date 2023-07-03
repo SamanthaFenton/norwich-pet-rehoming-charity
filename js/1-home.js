@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 console.log("sheet-one");
 
 //const welcome = alert("Welcome to Norpet, Norwich's specialist local animal adoption and rehoming charity");
@@ -61,4 +61,4 @@ function pageLoad() {
     enterLightMode();
   }
 }
-pageLoad();*/
+pageLoad();
