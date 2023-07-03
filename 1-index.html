@@ -10,8 +10,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <h1>NORPET</h1>
+        <form id="welcome">
+            <label for="light">
+                <input type="text" name="mode" id="lightButton" class="mode" value="light"><span>Light Mode</span>
+            </label>
+            <label for="dark">
+                <input type="text" name="mode" id="darkButton" class="mode" value="dark"><span>Dark Mode</span>
+            </label>
+        </form>
     </header>
 
     <main>
@@ -21,5 +29,6 @@
     <footer>
         <p>&#169 Norpet 2023. All rights reserved. Norpet helps animals in England.  Registered charity no.123456</p>
     </footer>
+    <script src="./js/1-home.js"></script>
 </body>
 </html>

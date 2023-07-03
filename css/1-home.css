@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+  padding: 1rem;
+  margin: auto;
+  width: 15rem;
+}
+
+label {
+  display: flex;
+  font-display: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+}
+
+.light {
+  color: black;
+  background-color: #fff;
+}
+
+.dark {
+  color: #fff;
+  background-color: rgb(23, 40, 40);
+}
