@@ -7,12 +7,13 @@
     <title>Document</title>
     <meta name="description" content="Norpet Norwich Pet Rehoming Charity" />
     <link rel="stylesheet" href="./css/2-home.css" />
+    <link rel="stylesheet" href="./css/3-adoption.css">
   </head>
 
   <body>
     <header>
       <div>
-        <img id="" src="" alt="" />
+        <img id="logo" src="" alt="" />
         <h1>NORPET</h1>
         <p class="subHeading">Norwich's #1 Pet Adoption and Rehoming Charity</p>
         <nav>
@@ -26,7 +27,7 @@
     </header>
 
     <main>
-      <article>
+      <Section>
         <h2>Adoption</h2>
         <p>Please see below animals we currently have ready for adoption.</p>
         <details>
@@ -41,29 +42,28 @@
           <summary>Other animals</summary>
           <p>We have many other animals ready for adoption, please contact us direct for more information.</p>
         </details>
-      </article>
+      </Section>
 
      <section>
         <h2>Adopt a pet</h2>
         <h3>Pets Available for Adoption:</h3>
         <form id="addPetForm">
-          <fieldset>
+          <fieldset id="bi">
             <legend>Basic Information</legend>
-  
             <label for="nameInput">Name</label>
             <input type="text" id="nameInput" name="name" />
-  
             <label for="interestInput">Interests</label>
             <input type="text" id="interestInput" name="interests" />
             <span>List interests, seperated by commas</span>
           </fieldset>
+
           <fieldset>
             <legend>Placement Information</legend>
             <p>Can be placed with...</p>
   
             <label>
               <input class="inline-input" type="checkbox" name="children" />
-              children
+              Children
             </label>
   
             <label>
@@ -73,7 +73,7 @@
   
             <label>
               <input class="inline-input" type="checkbox" name="medical" />
-              Medical Condition
+              Any Known Medical Condition
             </label>
             <label>
               <input class="inline-input" type="date" name="deadLine" />
@@ -82,47 +82,40 @@
           </fieldset>
           <button type="submit">SUBMIT</button>
         </form>
+
+
         <div id="petProfiles">
-          
           <article>
-           
             <h4></h4>
             <h5></h5>
             <p></p>
             <ul>
               <li></li>
             </ul>
+
             <table>
               <tr>
                 <th>
-                  Children
                 </th>
                 <th>
-                  Other Animals
                 </th>
-                <th>
-                  Medical Condition
+                <th>          
                 </th>
-                <th>
-                  Date Available From
+                <th>              
                 </th>
               </tr>
               <tr>
-                <td>
-                  true
+                <td>                
                 </td>
-                <td>
-                  false
+                <td>               
                 </td>
-                <td>
-                  true
+                <td>                 
                 </td>
               </tr>
             </table>
-            <img>
-          </article> -->
-        </div>
-     
+            <img id="pp">
+          </article>
+        </div>    
       <div>
         <button id="click">Click Me</button>
       </div>

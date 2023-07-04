@@ -1,9 +1,23 @@
 "use Strict";
-console.log("rehoming form");
+console.log("pet data");
 
 const rehomingForm = document.getElementById("rehomingForm");
+const parentElement = document.getElementById("petProfiles");
+console.log("parentElement");
+
+const article = document.createElement("article");
 
 const allPets = [];
+
+const pet = {
+  type: "cat",
+  name: "sofia",
+  age: 7,
+  interests: ["cuddling", "chasing string", "catnip"],
+  children: true,
+  otherAnimals: false,
+  medical: true,
+};
 
 function Pet(type, name, age, interests, children, otherAnimals, medical, deadLine, imgFileName) {
   this.type = type;
@@ -15,13 +29,11 @@ function Pet(type, name, age, interests, children, otherAnimals, medical, deadLi
   this.medical = medical;
   this.deadLine = deadLine;
   this.imageUrl = "images/" + imgFileName;
-  /*this.age = this.generateAge();*/
   this.pushPet = function () {
-    allpets.push(this);
+    allPets.push(this);
     console.log("allPets");
   };
   this.pushPet();
-  // this.render();
 }
 
 Pet.prototype.render = function () {
@@ -38,12 +50,10 @@ Pet.prototype.render = function () {
   h5.textContent = this.name;
   article.appendChild(h5);
 
-  // add a bio with kitten age
   const p = document.createElement("p");
-  p.textContent = `${this.name} is adorable and is ${this.age} old.`;
+  p.textContent = `${this.name} is adorable and is ${this.age} years old.`;
   article.appendChild(p);
 
-  // add interests in an unordered list
   const ul = document.createElement("ul");
   article.appendChild(ul);
   for (let i = 0; i < this.interests.length; i++) {
@@ -52,15 +62,12 @@ Pet.prototype.render = function () {
     ul.appendChild(li);
   }
 
-  // add a table to display what the kitten is good with
   const table = document.createElement("table");
   article.appendChild(table);
 
-  // add the header row
   const headerRow = document.createElement("tr");
   table.appendChild(headerRow);
 
-  // add the table header cells
   const childrenHeaderCell = document.createElement("th");
   childrenHeaderCell.textContent = "children";
   headerRow.appendChild(childrenHeaderCell);
@@ -75,7 +82,6 @@ Pet.prototype.render = function () {
 
   const availHeaderCell = document.createElement("th");
   availHeaderCell.textContent = "deadLine";
-  dataRow.appendChild(availHeaderCell);
 
   // add data row
   const dataRow = document.createElement("tr");
@@ -98,22 +104,25 @@ Pet.prototype.render = function () {
   availData.textContent = this.deadLine;
   dataRow.appendChild(availData);
 
-  // add the cats image
   const image = document.createElement("img");
-  image.setAttribute("src", this.imageUrl);
+  image.setAttribute("src", this.imgFileName);
   image.setAttribute("alt", `${this.name} profile shot.`);
   article.appendChild(image);
 };
+const img = document.createElement("img");
+img.setAttribute("src", "images/" + pet.name + ".jpg");
+img.setAttribute("alt", pet.name + "so cute!");
+article.appendChild(img);
 
 const sofia = new Pet(
-  "cat",
-  "eric",
+  "Cat",
+  "Sofia",
   "4",
   ["cuddling", "chasing string", "catnip"],
   true,
   false,
   true,
-  "images/pexels-alex-amak-16635443.jpg"
+  "https://unsplash.com/images/animals/cat"
 );
 
 console.log(sofia);
@@ -132,20 +141,21 @@ addPetForm.addEventListener("submit", function (event) {
   const children = event.target.children.checked;
   const otherAnimals = event.target.otherAnimals.checked;
   const medical = event.target.medical.checked;
+  const deadLine = event.target.availData.value;
   const imageUrl = "images/pexels-alex-amak-16635443.jpg";
 
   const newPet = new Pet(type, name, age, interests, children, otherAnimals, medical, deadLine, imageUrl);
   console.log(newPet);
   console.log(allPets);
 
-  renderAllPets();
+  render.allPets();
   addPetForm.reset();
 });
 
 function renderAllPets() {
-  for (let i = 0; i < allpets.length; i++) {
+  for (let i = 0; i < allPets.length; i++) {
     allPets[i].render();
   }
-}
 
-renderAllPets();
+  render.allPets();
+}

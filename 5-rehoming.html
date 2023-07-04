@@ -12,7 +12,7 @@
   <body>
     <header>
       <div>
-        <img id="" src="" alt="" />
+        <img id="logo" src="" alt="" />
         <h1>NORPET</h1>
         <p class="subHeading">Norwich's #1 Pet Adoption and Rehoming Charity</p>
         <nav>
@@ -36,13 +36,13 @@
         database.
       </h3>
       <div class="form-container">
-        <form id="new-pet-form">
+        <form id="rehomingForm">
           <fieldset>
             <legend>Enter Your Details:</legend>
             <label for="owner-name">Full Name</label>
             <input type="text" id="owner-name" name="owner-name" />
             <label for="address">Address</label>
-            <input type="text" id="postCode" name="postCode" />
+            <input type="text" id="address" name="address" />
           </fieldset>
           <fieldset>
             <legend>Enter New Pet Details for Rehoming:</legend>
@@ -62,12 +62,15 @@
             <label>
               <input class="inline-input" type="checkbox" name="children" />
             </label>
-            <label for="other-animals">Other Animals</label>
-            <input type="checkbox" id="other-animals" name="otherAnimals" />
-            <label for="medical-condition">Has a Medical Condition</label>
-            <input type="checkbox" id="medical-condition" name="medical" />
-            <label for="date-requiring-rehoming">Date Requiring Rehoming</label>
-            <input type="date" id="date-requiring-rehoming" name="deadline" />
+            <label>
+              <input class="inline-input" type="checkbox" name="otherAnimals" />
+            </label>
+            <label>
+              <input class="inline-input" type="checkbox" name="medical" />
+            </label>
+            <label>
+              <input class="inline-input" type="checkbox" name="deadLine" />
+            </label>
           </fieldset>
           <button type="submit">SUBMIT</button>
         </form>
