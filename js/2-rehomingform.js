@@ -9,7 +9,7 @@ const article = document.createElement("article");
 
 const allPets = [];
 
-const pet = {
+/*const pet = {
   type: "cat",
   name: "sofia",
   age: 7,
@@ -17,7 +17,7 @@ const pet = {
   children: true,
   otherAnimals: false,
   medical: true,
-};
+};*/
 
 function Pet(type, name, age, interests, children, otherAnimals, medical, deadLine, imgFileName) {
   this.type = type;
@@ -28,7 +28,7 @@ function Pet(type, name, age, interests, children, otherAnimals, medical, deadLi
   this.otherAnimals = otherAnimals;
   this.medical = medical;
   this.deadLine = deadLine;
-  this.imageUrl = "images/" + imgFileName;
+  this.imageUrl = imgFileName;
   this.pushPet = function () {
     allPets.push(this);
     console.log("allPets");
@@ -110,8 +110,8 @@ Pet.prototype.render = function () {
   article.appendChild(image);
 };
 const img = document.createElement("img");
-img.setAttribute("src", "images/" + pet.name + ".jpg");
-img.setAttribute("alt", pet.name + "so cute!");
+img.setAttribute("src", this.imgFileName);
+img.setAttribute("alt", this.name + "so cute!");
 article.appendChild(img);
 
 const sofia = new Pet(
@@ -122,7 +122,7 @@ const sofia = new Pet(
   true,
   false,
   true,
-  "https://unsplash.com/images/animals/cat"
+  "images/cats/Sofia.jpg"
 );
 
 console.log(sofia);
