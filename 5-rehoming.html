@@ -32,11 +32,18 @@
         saepe incidunt nisi voluptatibus, tempora dolore inventore fugit fugiat! Provident qui est eos omnis quos!
       </p>
       <h3>
-        Please complete and submit the form below to access our free servics and register your pet on our rehoming
+        Please complete and submit the form below to access our free service and register your pet on our rehoming
         database.
       </h3>
       <div class="form-container">
         <form id="new-pet-form">
+          <fieldset>
+            <legend>Enter Your Details:</legend>
+            <label for="owner-name">Full Name</label>
+            <input type="text" id="owner-name" name="owner-name" />
+            <label for="address">Address</label>
+            <input type="text" id="postCode" name="postCode" />
+          </fieldset>
           <fieldset>
             <legend>Enter New Pet Details for Rehoming:</legend>
             <label for="type-of-animal">Type of Animal</label>
@@ -45,15 +52,24 @@
             <input type="text" id="name-input" name="name" />
             <label for="age-input">Age</label>
             <input type="number" id="age-input" name="age" />
-            <label for="is-good-with-kids">Is Good With Kids</label>
-            <input type="text" id="is-good-with-kids" name="kids" />
-            <label for="is-good-with-other-animals">Is Good With Other Animals</label>
-            <input type="text" id="is-good-with-other-animals" name="otherAnimals" />
-            <label for="medical-condition">Medical Condition</label>
-            <input type="text" id="medical-condition" name="medical" />
+            <label for="interestsinput">Interests</label>
+            <input type="text" id="interestInput" name="interests" />
+            <span>List interests, seperated by commas</span>
+          </fieldset>
+          <fieldset>
+            <legend>Placement Information</legend>
+            <p>Can be placed with the following...</p>
+            <label>
+              <input class="inline-input" type="checkbox" name="children" />
+            </label>
+            <label for="other-animals">Other Animals</label>
+            <input type="checkbox" id="other-animals" name="otherAnimals" />
+            <label for="medical-condition">Has a Medical Condition</label>
+            <input type="checkbox" id="medical-condition" name="medical" />
             <label for="date-requiring-rehoming">Date Requiring Rehoming</label>
             <input type="date" id="date-requiring-rehoming" name="deadline" />
           </fieldset>
+          <button type="submit">SUBMIT</button>
         </form>
       </div>
     </main>
@@ -62,5 +78,6 @@
       <p>&#169; Norpet 2023. All rights reserved. Norpet helps animals in England. Registered charity no.123456</p>
     </footer>
     <script src="./js/1-home.js"></script>
+    <script src="./js/2-rehomingform.js"></script>
   </body>
 </html>

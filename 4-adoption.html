@@ -42,11 +42,96 @@
           <p>We have many other animals ready for adoption, please contact us direct for more information.</p>
         </details>
       </article>
-    </main>
+
+     <section>
+        <h2>Adopt a pet</h2>
+        <h3>Pets Available for Adoption:</h3>
+        <form id="addPetForm">
+          <fieldset>
+            <legend>Basic Information</legend>
+  
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" />
+  
+            <label for="interestInput">Interests</label>
+            <input type="text" id="interestInput" name="interests" />
+            <span>List interests, seperated by commas</span>
+          </fieldset>
+          <fieldset>
+            <legend>Placement Information</legend>
+            <p>Can be placed with...</p>
+  
+            <label>
+              <input class="inline-input" type="checkbox" name="children" />
+              children
+            </label>
+  
+            <label>
+              <input class="inline-input" type="checkbox" name="otherAnimals" />
+              Other Animals
+            </label>
+  
+            <label>
+              <input class="inline-input" type="checkbox" name="medical" />
+              Medical Condition
+            </label>
+            <label>
+              <input class="inline-input" type="date" name="deadLine" />
+              Date Available From
+            </label>
+          </fieldset>
+          <button type="submit">SUBMIT</button>
+        </form>
+        <div id="petProfiles">
+          
+          <article>
+           
+            <h4></h4>
+            <h5></h5>
+            <p></p>
+            <ul>
+              <li></li>
+            </ul>
+            <table>
+              <tr>
+                <th>
+                  Children
+                </th>
+                <th>
+                  Other Animals
+                </th>
+                <th>
+                  Medical Condition
+                </th>
+                <th>
+                  Date Available From
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  true
+                </td>
+                <td>
+                  false
+                </td>
+                <td>
+                  true
+                </td>
+              </tr>
+            </table>
+            <img>
+          </article> -->
+        </div>
+     
+      <div>
+        <button id="click">Click Me</button>
+      </div>
+   </section>
 
     <footer>
       <p>&#169; Norpet 2023. All rights reserved. Norpet helps animals in England. Registered charity no.123456</p>
     </footer>
     <script src="./js/1-home.js"></script>
+    <script src="./js/2-rehomingform.js"></script>
   </body>
 </html>
