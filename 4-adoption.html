@@ -39,24 +39,57 @@
     <main>
       <Section>
         <h2>Adoption</h2>
-        <p>Please see below animals we currently have ready for adoption.</p>
         <details>
-          <summary>Cats</summary>
-          <p>We currently have 100 cats ready for adoption.</p>
+          <summary>COST OF ADOPTION</summary>
+          <p><img src="images/cats/Cat_Fees_Whats_Included-1024x577.jpg" alt="fees"></p>
         </details>
         <details>
-          <summary>Dogs</summary>
-          <p>We currently have 100 dogs ready for adoption.</p>
+          <summary>PROCESS OF ADOPTION</summary>
+          <p><img src="images/cats/adoption-process-2022.jpg" alt="adoption process"></p>
         </details>
         <details>
-          <summary>Other animals</summary>
-          <p>We have many other animals ready for adoption, please contact us direct for more information.</p>
+          <summary>ADOPTION FORM</summary>
+          <form id="addPetForm">
+            <fieldset id="bi">
+              <legend>Basic Information</legend>
+              <label for="nameInput">Name</label>
+              <input type="text" id="nameInput" name="name" />
+              <label for="interestInput">Interests</label>
+              <input type="text" id="interestInput" name="interests" />
+              <span>List interests, seperated by commas</span>
+            </fieldset>
+  
+            <fieldset>
+              <legend>Placement Information</legend>
+              <p>Can be placed with...</p>
+    
+              <label>
+                <input class="inline-input" type="checkbox" name="children" />
+                Children
+              </label>
+    
+              <label>
+                <input class="inline-input" type="checkbox" name="otherAnimals" />
+                Other Animals
+              </label>
+    
+              <label>
+                <input class="inline-input" type="checkbox" name="medical" />
+                Any Known Medical Condition
+              </label>
+              <label>
+                <input class="inline-input" type="date" name="deadLine" />
+                Date Available From
+              </label>
+            </fieldset>
+            <button type="submit">SUBMIT</button>
+          </form>
         </details>
       </Section>
 
      <section>
-        <h2>Adopt a pet</h2>
-        <h3>Pets Available for Adoption:</h3>
+        <!--<h2>Adopt a pet</h2>
+        <h3>Please see below animals we currently have ready for adoption.</h3>
         <form id="addPetForm">
           <fieldset id="bi">
             <legend>Basic Information</legend>
@@ -91,10 +124,10 @@
             </label>
           </fieldset>
           <button type="submit">SUBMIT</button>
-        </form>
+        </form>-->
 
 
-        <div id="petProfiles">
+        <!--<div id="petProfiles">
           <article>
             <h4></h4>
             <h5></h5>
@@ -124,8 +157,8 @@
               </tr>
             </table>
             <img id="pp">
-          </article>
-          <img src="images/cats/Sofia.jpg" alt="Sofia">
+          </article>-->
+          <img id="profile" src="images/cats/Sofia.jpg" alt="Sofia">
         </div>    
       <div>
         <button id="click">Click Me</button>
