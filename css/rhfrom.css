@@ -1,8 +1,13 @@
 form {
   padding: 1rem;
+  background-color: honeydew;
+  border: 1px solid black;
 }
 
 input {
   width: 100%;
   padding-bottom: 5px;
+}
+legend {
+  font-size: 25px;
 }

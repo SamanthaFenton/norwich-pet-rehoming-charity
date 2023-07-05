@@ -16,7 +16,7 @@ nav {
   padding-bottom: 0.5rem;
 }
 
-a {
+#nav {
   color: navy;
   font-weight: bold;
   background-color: yellow;
