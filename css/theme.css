@@ -29,7 +29,9 @@
   color: #fff;
   background-color: rgb(23, 40, 40);
 }
-
+.dark + #rehomingForm {
+  color: black;
+}
 .center {
   display: flex;
   justify-content: center;

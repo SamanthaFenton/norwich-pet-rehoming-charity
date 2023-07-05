@@ -28,7 +28,7 @@ function Pet(type, name, age, interests, children, otherAnimals, medical, deadLi
   this.otherAnimals = otherAnimals;
   this.medical = medical;
   this.deadLine = deadLine;
-  this.imageUrl = imgFileName;
+  this.imageUrl = "images/cats/" + imgFileName;
   this.pushPet = function () {
     allPets.push(this);
     console.log("allPets");
@@ -41,10 +41,6 @@ Pet.prototype.render = function () {
 
   const article = document.createElement("article");
   containerElement.appendChild(article);
-
-  const img = document.createElement("img");
-  img.image = this.imageUrl;
-  article.appendChild(img);
 
   const h4 = document.createElement("h4");
   h4.textContent = this.type;
@@ -110,16 +106,12 @@ Pet.prototype.render = function () {
   dataRow.appendChild(availData);
 
   const image = document.createElement("img");
-  image.setAttribute("src", this.imgFileName);
+  image.setAttribute("src", this.imageUrl);
   image.setAttribute("alt", `${this.name} profile shot.`);
   article.appendChild(image);
 };
-const img = document.createElement("img");
-img.setAttribute("src", this.imgFileName);
-img.setAttribute("alt", this.name + "so cute!");
-article.appendChild(img);
 
-addPetForm.addEventListener("click", function (event) {
+/*addPetForm.addEventListener("click", function (event) {
   event.preventDefault();
   console.log(event);
   const type = event.target.type.value;
@@ -140,7 +132,7 @@ addPetForm.addEventListener("click", function (event) {
 
   render.allPets();
   addPetForm.reset();
-});
+});*/
 
 const sofia = new Pet(
   "Cat",
