@@ -42,6 +42,10 @@ Pet.prototype.render = function () {
   const article = document.createElement("article");
   containerElement.appendChild(article);
 
+  const img = document.createElement("img");
+  img.image = this.imageUrl;
+  article.appendChild(img);
+
   const h4 = document.createElement("h4");
   h4.textContent = this.type;
   article.appendChild(h4);
@@ -69,19 +73,20 @@ Pet.prototype.render = function () {
   table.appendChild(headerRow);
 
   const childrenHeaderCell = document.createElement("th");
-  childrenHeaderCell.textContent = "children";
+  childrenHeaderCell.textContent = "Can live with children";
   headerRow.appendChild(childrenHeaderCell);
 
   const otherAnHeaderCell = document.createElement("th");
-  otherAnHeaderCell.textContent = "otherAnimals";
+  otherAnHeaderCell.textContent = "Can live with other animals";
   headerRow.appendChild(otherAnHeaderCell);
 
   const medHeaderCell = document.createElement("th");
-  medHeaderCell.textContent = "medical";
+  medHeaderCell.textContent = "Has medical condition";
   headerRow.appendChild(medHeaderCell);
 
-  const availHeaderCell = document.createElement("th");
-  availHeaderCell.textContent = "deadLine";
+  const dateHeaderCell = document.createElement("th");
+  dateHeaderCell.textContent = "Date available";
+  headerRow.appendChild(dateHeaderCell);
 
   // add data row
   const dataRow = document.createElement("tr");
@@ -127,7 +132,7 @@ addPetForm.addEventListener("click", function (event) {
   const otherAnimals = event.target.otherAnimals.checked;
   const medical = event.target.medical.checked;
   const deadLine = event.target.availData.value;
-  const imageUrl = "images/pexels-alex-amak-16635443.jpg";
+  const imageUrl = event.target.imageUrl.value;
 
   const newPet = new Pet(type, name, age, interests, children, otherAnimals, medical, deadLine, imageUrl);
   console.log(newPet);

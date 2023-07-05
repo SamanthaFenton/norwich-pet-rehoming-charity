@@ -8,6 +8,7 @@
     <meta name="description" content="Norpet Norwich Pet Rehoming Charity" />
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/standard.css" />
+    <link rel="stylesheet" href="css/rhfrom.css" />
   </head>
 
   <body>
@@ -43,16 +44,18 @@
       </p>
       <h3>
         Please complete and submit the form below to access our free service and register your pet on our rehoming
-        database.
+        database. Once the form is received a trained member of staff will contact you to discuss your needs.
       </h3>
       <div class="form-container">
         <form id="rehomingForm">
           <fieldset>
             <legend>Enter Your Details:</legend>
-            <label for="owner-name">Full Name</label>
+            <label for="owner-name">Owner Full Name</label>
             <input type="text" id="owner-name" name="owner-name" />
             <label for="address">Address</label>
             <input type="text" id="address" name="address" />
+            <label for="contactNo">Contact Number</label>
+            <input type="tel" id="tel" name="telNo" />
           </fieldset>
           <fieldset>
             <legend>Enter New Pet Details for Rehoming:</legend>
@@ -62,24 +65,27 @@
             <input type="text" id="name-input" name="name" />
             <label for="age-input">Age</label>
             <input type="number" id="age-input" name="age" />
-            <label for="interestsinput">Interests</label>
+            <label for="interestsinput">Interests:</label><span> Please list interests, seperated by commas</span>
             <input type="text" id="interestInput" name="interests" />
-            <span>List interests, seperated by commas</span>
           </fieldset>
           <fieldset>
             <legend>Placement Information</legend>
             <p>Can be placed with the following...</p>
-            <label>
+            <label for="children"
+              >Children?
               <input class="inline-input" type="checkbox" name="children" />
             </label>
-            <label>
+            <label
+              >Other Animals?
               <input class="inline-input" type="checkbox" name="otherAnimals" />
             </label>
-            <label>
+            <label
+              >Has a medical condition?
               <input class="inline-input" type="checkbox" name="medical" />
             </label>
-            <label>
-              <input class="inline-input" type="checkbox" name="deadLine" />
+            <label
+              >Date of rehoming?
+              <input class="inline-input" type="date" name="deadLine" />
             </label>
           </fieldset>
           <button type="submit">SUBMIT</button>
