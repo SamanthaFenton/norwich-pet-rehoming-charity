@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  font-size: 300px;
+  font-size: 100px;
 }
 
 #theme {
@@ -39,6 +39,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 150px;
   background-color: yellow;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
 }
