@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <meta name="description" content="Norpet Norwich Pet Rehoming Charity" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/2-home.css" />
   </head>
 
   <body>
     <header>
-      <div>
+      <div class="container">
         <img id="logo" src="" alt="" />
         <h1>NORPET</h1>
+        <form id="theme">
+          <label for="lightButton" id="mode">
+            <input type="radio" name="mode" id="lightButton" class="mode" value="light" /><span>Light Mode</span>
+          </label>
+          <label for="darkButton" id="mode">
+            <input type="radio" name="mode" id="darkButton" class="mode" value="dark" /><span>Dark Mode</span>
+          </label>
+        </form>
+      </div>
+      <div>
         <p class="subHeading">Norwich's #1 Pet Adoption and Rehoming Charity</p>
         <nav>
           <a href="./2-home.html">Home</a>
@@ -80,7 +91,7 @@
     <footer>
       <p>&#169; Norpet 2023. All rights reserved. Norpet helps animals in England. Registered charity no.123456</p>
     </footer>
-    <script src="./js/1-home.js"></script>
+    <script src="./js/theme.js"></script>
     <script src="./js/2-rehomingform.js"></script>
   </body>
 </html>

@@ -3,16 +3,6 @@ h1 {
   font-size: 100px;
 }
 
-.light {
-  color: black;
-  background-color: #fff;
-}
-
-.dark {
-  color: #fff;
-  background-color: rgb(23, 40, 40);
-}
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -32,8 +22,6 @@ a {
   background-color: yellow;
   padding: 1rem 2rem;
   border-bottom: 10px solid black;
-}
-#map {
 }
 
 footer {

@@ -1,0 +1,39 @@
+#theme {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+
+  margin: auto;
+  width: 15rem;
+}
+
+#mode {
+  display: flex;
+  font-display: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+}
+
+.light {
+  color: black;
+  background-color: #fff;
+}
+
+.dark {
+  color: #fff;
+  background-color: rgb(23, 40, 40);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: yellow;
+}

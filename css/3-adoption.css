@@ -50,7 +50,7 @@ td {
   padding: 0.5rem;
 }
 
-input {
+.nameInput {
   display: block;
   margin-bottom: 2rem;
 }

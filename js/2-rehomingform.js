@@ -114,22 +114,7 @@ img.setAttribute("src", this.imgFileName);
 img.setAttribute("alt", this.name + "so cute!");
 article.appendChild(img);
 
-const sofia = new Pet(
-  "Cat",
-  "Sofia",
-  "4",
-  ["cuddling", "chasing string", "catnip"],
-  true,
-  false,
-  true,
-  "images/cats/Sofia.jpg"
-);
-
-console.log(sofia);
-
-sofia.render();
-
-addPetForm.addEventListener("submit", function (event) {
+addPetForm.addEventListener("click", function (event) {
   event.preventDefault();
   console.log(event);
   const type = event.target.type.value;
@@ -151,6 +136,34 @@ addPetForm.addEventListener("submit", function (event) {
   render.allPets();
   addPetForm.reset();
 });
+
+const sofia = new Pet(
+  "Cat",
+  "Sofia",
+  "4",
+  ["cuddling", "chasing string", "catnip"],
+  true,
+  false,
+  true,
+  "07.07.2023",
+  "images/cats/Sofia.jpg"
+);
+const shiznay = new Pet(
+  "Cat",
+  "Shiznay",
+  2,
+  ["eating", "sleeping", "nosey"],
+  true,
+  true,
+  false,
+  "images/cats/shiznaycat.jpg"
+);
+
+console.log(sofia);
+console.log(shiznay);
+
+sofia.render();
+shiznay.render();
 
 function renderAllPets() {
   for (let i = 0; i < allPets.length; i++) {
