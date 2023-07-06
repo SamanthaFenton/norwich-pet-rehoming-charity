@@ -4,47 +4,54 @@ console.log("adoption");
 const pet = {
   type: "cat",
   breed: "dsh",
-  name: "sofia",
+  name: "Sofia",
   age: 7,
   interests: ["cuddling", "chasing string", "catnip"],
   children: true,
   otherAnimals: false,
   medical: false,
 };
+
+const parentElement = document.getElementById("petProfiles");
+
 const article = document.createElement("article");
+
 const h3 = document.createElement("h3");
 h3.textContent = pet.name;
-article.appendChild("h3");
+article.appendChild(h3);
 
 const h4 = document.createElement("h4");
 h4.textContent = pet.type;
-article.appendChild("h4");
+article.appendChild(h4);
 
 const h5 = document.createElement("h5");
 h5.textContent = pet.breed;
-article.appendChild("h5");
+article.appendChild(h5);
 
 const p = document.createElement("p");
 p.textContent = pet.name + " is adorable and is " + pet.age + " old";
-article.appendChild("p");
+article.appendChild(p);
 
 const ul = document.createElement("ul");
 article.appendChild(ul);
-for (let i = 0; i < this.interests.length; i++) {
+
+for (let i = 0; i < pet.interests.length; i++) {
   const li = document.createElement("li");
-  li.textContent = this.interests[i];
-  ul.appendChild("li");
+  li.textContent = pet.interests[i];
+  ul.appendChild(li);
 }
 
 const img = document.createElement("img");
-img.setAttribute("src", "images/", +pet.name + "ready for rehoming");
-article.appendChild("img");
+img.setAttribute("src", "images/cats/" + pet.name + ".jpg");
+article.appendChild(img);
 
-console.log("pet");
+console.log(pet);
 console.log(pet.type);
 console.log(pet.breed);
 console.log(pet.name);
 console.log(pet.age);
+
+parentElement.appendChild(article);
 
 /*const pet = {
   type: "cat",

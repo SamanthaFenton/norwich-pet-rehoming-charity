@@ -1,7 +1,7 @@
 "use Strict";
 console.log("pet data");
 
-const rehomingForm = document.getElementById("rehomingForm");
+//const rehomingForm = document.getElementById("rehomingForm");
 const parentElement = document.getElementById("petProfiles");
 console.log("parentElement");
 
@@ -29,6 +29,7 @@ function Pet(type, name, age, interests, children, otherAnimals, medical, deadLi
   this.medical = medical;
   this.deadLine = deadLine;
   this.imageUrl = "images/cats/" + imgFileName;
+  this.render();
   this.pushPet = function () {
     allPets.push(this);
     console.log("allPets");
