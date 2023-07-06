@@ -1,23 +1,12 @@
 "use Strict";
 console.log("pet data");
 
-//const rehomingForm = document.getElementById("rehomingForm");
 const parentElement = document.getElementById("petProfiles");
 console.log("parentElement");
 
 const article = document.createElement("article");
 
 const allPets = [];
-
-/*const pet = {
-  type: "cat",
-  name: "sofia",
-  age: 7,
-  interests: ["cuddling", "chasing string", "catnip"],
-  children: true,
-  otherAnimals: false,
-  medical: true,
-};*/
 
 function Pet(type, name, age, interests, children, otherAnimals, medical, deadLine, imgFileName) {
   this.type = type;
@@ -56,12 +45,13 @@ Pet.prototype.render = function () {
   article.appendChild(p);
 
   const ul = document.createElement("ul");
-  article.appendChild(ul);
+
   for (let i = 0; i < this.interests.length; i++) {
     const li = document.createElement("li");
     li.textContent = this.interests[i];
     ul.appendChild(li);
   }
+  article.appendChild(ul);
 
   const table = document.createElement("table");
   article.appendChild(table);
@@ -107,7 +97,7 @@ Pet.prototype.render = function () {
   dataRow.appendChild(availData);
 
   const image = document.createElement("img");
-  image.setAttribute("src", this.imageUrl);
+  image.setAttribute("src", "images/cats/" + this.name + ".jpg");
   image.setAttribute("alt", `${this.name} profile shot.`);
   article.appendChild(image);
 };
@@ -159,9 +149,6 @@ const shiznay = new Pet(
 
 console.log(sofia);
 console.log(shiznay);
-
-sofia.render();
-shiznay.render();
 
 function renderAllPets() {
   for (let i = 0; i < allPets.length; i++) {
