@@ -15,7 +15,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 70%;
+  width: 100;
   margin: 5rem auto;
 }
 
@@ -68,4 +68,6 @@ li {
 canvas {
   width: 75%;
   height: 500px;
+  color: red;
+  background-color: white;
 }

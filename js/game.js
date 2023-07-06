@@ -131,14 +131,23 @@ function checkLocalStorage() {
     allPets = localPets;
   } else {
     console.log("new pets please");
-    const arthur = new Pet("arthur", "images/cats/arthurcat.jpg");
-    const blue = new Pet("blue", "images/cats/Bluecat.jpg");
-    const arbuckle = new Pet("arbuckle", "images/dogs/arbucklecat.jpg");
-    const bruno = new Pet("bruno", "images/dogs/brunodog.jpg");
-    const buckley = new Pet("buckley", "images/dogs/buckleydog.jpg");
-    const jaxnjones = new Pet("jaxnjones", "images/Jax & Jonesbunnies.jpg");
-    const scratchnsniff = new Pet("scratchnsniff", "images/scratchnsniffrats.jpg");
-    const snail = new Pet("snail", "images/snailpic.jpg");
+    const arthur = new Pet("arthur", "images/Arthur.jpg");
+    const blue = new Pet("blue", "images/Blue.jpg");
+    const arbuckle = new Pet("arbuckle", "images/Arbuckle.jpg");
+    const bruno = new Pet("bruno", "images/Bruno.jpg");
+    const buckley = new Pet("buckley", "images/Buckley.jpg");
+    const jaxnjones = new Pet("jaxnjones", "images/JaxnJones.jpg");
+    const scratchnsniff = new Pet("scratchnsniff", "images/ScratchnSniff.jpg");
+    const snail = new Pet("snail", "images/Geoff.jpg");
+    const zaphira = new Pet("zaphira", "images/Zaphira.jpg");
+    const sofia = new Pet("sofia", "images/Sofia.jpg");
+    const shiznay = new Pet("shiznay", "images/Shiznay.jpg");
+    const sheeba = new Pet("sheeba", "images/Sheeba.jpg");
+    const loobie = new Pet("loobie", "images/Loobie.jpg");
+    const hunter = new Pet("hunter", "images/Hunter.jpg");
+    const dwayne = new Pet("dwayne", "images/Dwayne.jpg");
+    const dribbles = new Pet("dribbles", "images/Dribbles.jpg");
+    const hamishnfraser = new Pet("hamishnfraser", "images/Hamish and Fraser.jpg");
   }
 }
 
