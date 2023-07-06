@@ -6,3 +6,6 @@ const welcome = alert("Welcome to Norpet, Norwich's specialist local animal adop
 let user = prompt("Please tell me your name?").toLowerCase();
 
 const greet = alert("Thanks " + user + " , please personalise your experience by selecting a theme for the website.");
+
+const song = document.getElementById("song");
+song.onplay();
