@@ -97,7 +97,7 @@ Pet.prototype.render = function () {
   dataRow.appendChild(availData);
 
   const image = document.createElement("img");
-  image.setAttribute("src", "images/cats/" + this.name + ".jpg");
+  image.setAttribute("src", "images/" + this.name + ".jpg");
   image.setAttribute("alt", `${this.name} profile shot.`);
   article.appendChild(image);
 };
@@ -134,7 +134,7 @@ const sofia = new Pet(
   false,
   true,
   "07.07.2023",
-  "images/cats/Sofia.jpg"
+  "images/Sofia.jpg"
 );
 const shiznay = new Pet(
   "Cat",
@@ -144,7 +144,7 @@ const shiznay = new Pet(
   true,
   true,
   false,
-  "images/cats/shiznaycat.jpg"
+  "images/shiznaycat.jpg"
 );
 
 console.log(sofia);

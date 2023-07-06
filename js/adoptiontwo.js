@@ -42,7 +42,7 @@ for (let i = 0; i < pet.interests.length; i++) {
 }
 
 const img = document.createElement("img");
-img.setAttribute("src", "images/cats/" + pet.name + ".jpg");
+img.setAttribute("src", "images/" + pet.name + ".jpg");
 article.appendChild(img);
 
 console.log(pet);
