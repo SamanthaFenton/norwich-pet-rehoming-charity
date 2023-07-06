@@ -25,6 +25,7 @@ function Pet(name, src) {
 
 function renderPets() {
   let pet2 = getRandomNumber();
+  let pet1 = getRandomNumber();
 
   while (pet1 === pet2) {
     pet2 = getRandomNumber();

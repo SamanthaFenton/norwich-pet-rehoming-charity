@@ -1,5 +1,6 @@
 article {
   background-color: cornsilk;
+  color: black;
   border: 1px solid darkblue;
   width: 100%;
   display: flex;
