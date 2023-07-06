@@ -146,6 +146,87 @@ const shiznay = new Pet(
   false,
   "images/shiznaycat.jpg"
 );
+const arbuckle = new Pet(
+  "Cat",
+  "Arbuckle",
+  8,
+  ["fighting", "playing", "ninja skills"],
+  false,
+  false,
+  false,
+  "images/Arbuckle.jpg"
+);
+const arthur = new Pet(
+  "Cat",
+  "Athur",
+  2,
+  ["frisby", "sunbathing", "socialing"],
+  true,
+  true,
+  false,
+  "images/Arthur.jpg"
+);
+const blue = new Pet("Cat", "Blue", 12, ["fighting", "sleeping", "sunbathing"], false, false, false, "images/Blue.jpg");
+const bruno = new Pet(
+  "Dog",
+  "Bruno",
+  2,
+  ["sleeping", "sunbathing", "socialing"],
+  true,
+  true,
+  false,
+  "images/Bruno.jpg"
+);
+const buckley = new Pet(
+  "Dog",
+  "Buckley",
+  1,
+  ["ballgames", "herding", "walks"],
+  false,
+  false,
+  false,
+  "images/Buckley.jpg"
+);
+const dribbles = new Pet(
+  "Dog",
+  "Dribbles",
+  2,
+  ["cuddles", "footlover", "backscratches"],
+  true,
+  true,
+  false,
+  "images/Dribbles.jpg"
+);
+const Dwayne = new Pet(
+  "Dog",
+  "Dwayne",
+  2,
+  ["licking", "playing", "tummyrubs"],
+  false,
+  false,
+  false,
+  "images/Dwayne.jpg"
+);
+const jaxnjones = new Pet(
+  "Rats",
+  "JaxnJones",
+  1,
+  ["hopping", "nibbling", "playing"],
+  true,
+  true,
+  false,
+  "images/JaxnJones.jpg"
+);
+const zaphira = new Pet(
+  "Dog",
+  "Zaphira",
+  4,
+  ["running", "cuddles", "sunbathing"],
+  false,
+  false,
+  false,
+  "images/Zaphira.jpg"
+);
 
 console.log(sofia);
 console.log(shiznay);
