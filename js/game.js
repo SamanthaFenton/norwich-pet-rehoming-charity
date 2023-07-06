@@ -125,7 +125,7 @@ function setLocalStorage() {
 }
 
 function checkLocalStorage() {
-  const localPets = JSON.parse(localStorage.getItem("goats"));
+  const localPets = JSON.parse(localStorage.getItem("pets"));
 
   if (localPets) {
     allPets = localPets;
