@@ -125,68 +125,22 @@ Pet.prototype.render = function () {
   addPetForm.reset();
 });*/
 
-const sofia = new Pet(
-  "Cat",
-  "Sofia",
-  "4",
-  ["cuddling", "chasing string", "catnip"],
-  true,
-  false,
-  true,
-  "07.07.2023",
-  "images/Sofia.jpg"
-);
-const shiznay = new Pet(
-  "Cat",
-  "Shiznay",
-  2,
-  ["eating", "sleeping", "nosey"],
-  true,
-  true,
-  false,
-  "images/shiznaycat.jpg"
-);
+const sofia = new Pet("Cat", "Sofia", "4", ["cuddling", "chasing string", "catnip"], true, false, true, "07.07.2023");
+const shiznay = new Pet("Cat", "Shiznay", 2, ["eating", "sleeping", "nosey"], true, true, false, "30.03.2023");
 const arbuckle = new Pet(
   "Cat",
   "Arbuckle",
   8,
-  ["fighting", "playing", "ninja skills"],
+  ["fighting", "playing", "ninjaskills"],
   false,
   false,
   false,
-  "images/Arbuckle.jpg"
+  "30.03.2023"
 );
-const arthur = new Pet(
-  "Cat",
-  "Athur",
-  2,
-  ["frisby", "sunbathing", "socialing"],
-  true,
-  true,
-  false,
-  "images/Arthur.jpg"
-);
-const blue = new Pet("Cat", "Blue", 12, ["fighting", "sleeping", "sunbathing"], false, false, false, "images/Blue.jpg");
-const bruno = new Pet(
-  "Dog",
-  "Bruno",
-  2,
-  ["sleeping", "sunbathing", "socialing"],
-  true,
-  true,
-  false,
-  "images/Bruno.jpg"
-);
-const buckley = new Pet(
-  "Dog",
-  "Buckley",
-  1,
-  ["ballgames", "herding", "walks"],
-  false,
-  false,
-  false,
-  "images/Buckley.jpg"
-);
+const arthur = new Pet("Cat", "Arthur", 2, ["frisby", "sunbathing", "socialing"], true, true, false, "30.03.2023");
+const blue = new Pet("Cat", "Blue", 12, ["fighting", "sleeping", "sunbathing"], false, false, false, "30.03.2023");
+const bruno = new Pet("Dog", "Bruno", 2, ["sleeping", "sunbathing", "socialing"], true, true, false, "30.03.2023");
+const buckley = new Pet("Dog", "Buckley", 1, ["ballgames", "herding", "walks"], false, false, false, "30.03.2023");
 const dribbles = new Pet(
   "Dog",
   "Dribbles",
@@ -195,41 +149,45 @@ const dribbles = new Pet(
   true,
   true,
   false,
-  "images/Dribbles.jpg"
+  "30.03.2023"
 );
-const Dwayne = new Pet(
-  "Dog",
-  "Dwayne",
-  2,
-  ["licking", "playing", "tummyrubs"],
-  false,
-  false,
-  false,
-  "images/Dwayne.jpg"
-);
+const dwayne = new Pet("Dog", "Dwayne", 2, ["licking", "playing", "tummyrubs"], false, false, false, "30.03.2023");
 const jaxnjones = new Pet(
-  "Rats",
+  "Rabbits",
   "JaxnJones",
   1,
   ["hopping", "nibbling", "playing"],
   true,
   true,
   false,
-  "images/JaxnJones.jpg"
+  "30.03.2023"
 );
-const zaphira = new Pet(
-  "Dog",
-  "Zaphira",
-  4,
-  ["running", "cuddles", "sunbathing"],
+const sheeba = new Pet("Cat", "Sheeba", 5, ["running", "cuddles", "playing"], false, false, false, "30.03.2023");
+const snail = new Pet("Snail", "Geoff", 4, ["sliming", "lettuce", "baths"], false, false, false, "30.03.2023");
+const loobie = new Pet("Cat", "Loobie", 7, ["licking", "scratching", "eating"], false, false, false, "30.03.2023");
+const scratchnsniff = new Pet(
+  "Rats",
+  "ScratchnSniff",
+  1,
+  ["nibbling", "licking", "climbing"],
   false,
   false,
   false,
-  "images/Zaphira.jpg"
+  "30.03.2023"
 );
 
 console.log(sofia);
 console.log(shiznay);
+console.log(arbuckle);
+console.log(arthur);
+console.log(blue);
+console.log(scratchnsniff);
+console.log(loobie);
+console.log(snail);
+console.log(sheeba);
+console.log(jaxnjones);
+console.log(dwayne);
+console.log(dribbles);
 
 function renderAllPets() {
   for (let i = 0; i < allPets.length; i++) {
