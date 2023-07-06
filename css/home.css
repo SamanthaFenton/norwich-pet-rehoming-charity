@@ -3,3 +3,8 @@ img {
   height: 500px;
   object-fit: cover;
 }
+h2 {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 50px;
+}
