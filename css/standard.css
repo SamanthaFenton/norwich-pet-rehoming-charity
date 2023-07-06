@@ -37,3 +37,6 @@ main {
   width: 70%;
   margin: 5rem auto;
 }
+a {
+  color: red;
+}
